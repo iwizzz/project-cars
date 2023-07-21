@@ -1,0 +1,143 @@
+.main_container {
+}
+
+.main_choose-car {
+    width: 100%;
+
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.choose-car_h2 {
+}
+
+.choose-car_tags-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    max-width: 860px;
+
+    margin-top: 50px;
+
+    @media (max-width: 650px) {
+        flex-wrap: wrap;
+    }
+}
+
+.choose-car_tags-list-item {
+    margin: 0 auto;
+
+    position: relative;
+
+    height: fit-content;
+
+    display: flex;
+    justify-content: space-around;
+
+    
+
+    &:not(:last-child) {
+        margin-right: 15px;
+    }
+
+    h3 {
+        transition: color .2s;
+
+        @media (max-width: 650px) {
+            max-width: 100px;
+        }
+    }
+
+    & input {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: 100%;
+        
+        opacity: 0;
+
+        &:checked {
+            & + h3 {
+                color: $blue;
+            }
+        }
+    }
+
+    @media (max-width: 650px) {
+        width: 50%;
+
+        &:not(:last-child) {
+            margin-right: 0px;
+        }
+        &:nth-child(3), &:nth-child(4) {
+            margin-top: 20px;
+        }
+        &:last-child {
+            margin-top: 20px;
+        }
+    }
+}
+
+
+.choose-car_cars-list {
+    margin-top: 100px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 100px 40px;
+
+    @media (max-width: 1024px) {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 60px 40px;
+    }
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr 1fr;   
+    }
+    @media (max-width: 425px) {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}
+
+.choose-car_cars-list-item {
+    
+
+    border: 1px solid $blue;
+    & > *:not(:first-child) {
+        margin-top: 20px;
+    }
+    img {
+        border-bottom: 1px solid $blue;
+    }
+}
+
+.choose-car_cars-list-item_a {
+    display: inline-block;
+
+    width: 100%;
+
+    padding: 2px 0;
+
+    border-top: 1px solid $blue;
+
+    color: $blue !important;
+
+    transition: all .3s;
+
+    &:hover {
+        color: $white !important;
+
+        background-color: $blue;
+    }
+}
+
+.choose-car_button {
+    margin-top: 70px;
+}

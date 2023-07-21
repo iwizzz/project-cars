@@ -1,0 +1,387 @@
+@import "./parts/reset";
+@import "./parts/constants";
+@import "./parts/header";
+@import "./parts/footer";
+@import "./parts/news";
+@import "new-cars";
+@import "contact-us";
+
+
+
+body {
+
+    font-family: 'Inter', sans-serif;
+    height: 100%;
+
+    color: $black;
+}
+
+h2 {
+    font-size: 48px;
+    font-weight: 700;
+
+    @media (max-width: 768px) {
+        font-size: 42px;
+    }
+    @media (max-width: 425px) {
+        font-size: 36px;
+    }
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 700;
+
+    @media (max-width: 768px) {
+        font-size: 20px;
+    }
+    @media (max-width: 425px) {
+        font-size: 18px;
+    }
+}
+
+.wrapper {
+	position: relative;
+
+    overflow: hidden;
+}
+
+main {
+    min-height: 100vh;
+}
+
+
+.header-main {
+    background: none;
+}
+
+
+
+/*<---------------------------------------------------------------------------------------------------------->*/
+.main_major {
+    height: 100vh;
+    position: relative;
+}
+
+.swiper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    width: 100%;
+    height: 100%;
+
+}
+
+.swiper-wrapper {
+    width: 100%;
+    height: 100%;
+
+
+    display: flex;
+
+    overflow-x: visible;
+}
+
+.swiper-slide {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: bottom center;
+}   
+
+.swiper-pagination-bullet {
+    width: 80px;
+    height: 3px;
+
+    background-color: $white;
+    border-radius: 0;
+
+    &:not(:last-child) {
+        margin-right: 30px !important;
+    }
+}
+.major_background-blackout {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+
+    width: 400%;
+    height: 100%;
+
+    background-color: $black;
+
+    opacity: 0.3;
+}
+
+.major_body {
+    text-align: center;
+
+    margin-top: 250px;
+
+    z-index: 3;
+}
+
+.major_h1 {
+    font-size: 96px;
+    font-weight: 700;
+    color: $white;
+
+    @media (max-width: 768px) {
+        font-size: 72px;
+    }
+    @media (max-width: 425px) {
+        font-size: 54px;
+    }
+}
+
+.major_button {
+    text-transform: uppercase;
+
+    padding: 23px 112.5px;
+
+    font-size: 36px;
+    font-weight: 700;
+
+    margin-top: 38px;
+
+    @media (max-width: 768px) {
+        font-size: 24px;
+        padding: 23px 80px;
+    }
+    @media (max-width: 425px) {
+        font-size: 16px;
+    }
+}
+
+/*<---------------------------------------------------------------------------------------------------------->*/
+
+.main_page {
+    padding: 150px 0;
+
+    
+}
+
+.page_advantages {
+    text-align: center;
+}
+
+.advantages_list {
+    display: flex;
+
+    width: 100%;
+    
+    margin-top: 50px;
+
+    @media (max-width: 768px) {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        
+    }
+}
+
+.advantages_list-item {
+    max-width: 270px;
+
+    &:not(:last-child) {
+        margin-right: 40px;
+    }
+
+    & *:not(:first-child) {
+        margin-top: 30px;
+    }
+
+    @media (max-width: 768px) {
+        &:nth-child(3), &:nth-child(4) {
+            margin-top: 40px;
+        }
+
+        &:not(:last-child) {
+            margin-right: 0;
+        }
+    }
+
+    @media (max-width: 570px) {
+        &:not(:first-child) {
+            margin-top: 40px;
+        }
+    }
+}
+.advantages_list-item-h3 {
+    margin: 0 auto;
+
+    @media (max-width: 1038px) {
+        max-width: 100px;
+    }
+}
+.advantages_list-item-text {
+    text-align: left;
+
+    @media (max-width: 768px) {
+        text-align: center;
+    }
+}
+/*<---------------------------------------------------------------------------------------------------------->*/
+.page_how-work {
+    max-width: 594px;
+
+    margin-top: 150px;
+
+    & > *:not(:first-child, :last-child) {
+        margin-top: 50px;
+    }
+
+    & > *:last-child {
+        margin-top: 70px
+    }
+
+    @media (max-width: 768px) {
+        text-align: center;
+    }
+}
+.how-work_h2 {
+    text-align: center;
+}
+
+.how-work_list-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &:not(:first-child) {
+        margin-top: 40px;
+    }
+
+    & > *:nth-child(2) {
+        max-width: 270px;
+    }
+
+    @media (max-width: 425px) {
+        & > *:nth-child(2) {
+            max-width: 174px;
+        }
+    }
+}
+.how-work_number {
+    width: 100px;
+    height: 100px;
+
+    background-color: $blue;
+
+    border-radius: 50%;
+
+    text-align: center;
+    line-height: 100px;
+
+    font-size: 48px;
+    color: $white;
+    font-weight: 700;
+
+    @media (max-width: 768px) {
+        width: 75px;
+        height: 75px;
+
+        line-height: 75px;
+
+        font-size: 32px;
+    }
+}
+
+/*<---------------------------------------------------------------------------------------------------------->*/
+.page_leasing {
+    text-align: center;
+
+    padding-top: 150px;
+}
+
+.leasing_h3 {
+    margin-top: 20px;
+}
+.leasing_vidio {
+    width: 1000px;
+    height: 500px;
+
+    margin-top: 50px;
+
+    @media (max-width: 1024px) {
+        width: 750px;
+        height: 375px;
+    }
+    @media (max-width: 768px) {
+        width: 500px;
+        height: 250px;
+    }
+    @media (max-width: 520px) {
+        width: 400px;
+        height: 200px;
+    }
+    @media (max-width: 425px) {
+        width: 300px;
+        height: 150px;
+    }
+}
+/*<---------------------------------------------------------------------------------------------------------->*/
+.page_important-things {
+    padding-top: 150px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+
+    @media (max-width: 634px) {
+        & > * {
+            text-align: center;
+        }
+    }
+}
+
+.important-things_text {
+    max-width: 580px;
+
+    margin-top: 20px;
+}
+
+.important-things_list {
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+
+    margin-top: 50px;
+
+    @media (max-width: 1150px) {
+        flex-wrap: wrap;
+    }
+}
+
+.important-things_list-item {
+    width: 270px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (max-width: 1150px) {
+        width: 50%;
+        
+        &:nth-child(3), &:nth-child(4) {
+            margin-top: 20px;
+        }   
+
+        & > * {
+            width: 270px;
+        }
+    }
+    @media (max-width: 634px) {
+        width: 100%;
+        &:not(:first-child) {
+            margin-top: 20px;
+        }
+        
+    }
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
+    <link rel="stylesheet" href="../style/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header_container _container">
+                <a class="header_logo-container" href="../index.html"><img src="../src/header/logo.png" alt=""></a>
+                <nav class="header_nav nav">
+                    <a href="../html/new-cars.html" class="nav_a">NEW CARS</a>
+                    <a href="#" class="nav_a">PRE-OWNED CARS</a>
+                    <a href="#" class="nav_a">FINANCE</a>
+                    <a href="#" class="nav_a">LEASE VS BUY</a>
+                    <a href="#" class="nav_a" style="color: #0066FF">CONTACT US</a>
+                </nav>
+                <div class="burger" onclick="document.querySelector(`.burger-menu`).style.left = 0; document.querySelector(`body`).style.overflow = `hidden`">
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                </div>
+                <div class="burger-menu">
+                    <nav class="burger_nav nav">
+                        <a href="../html/new-cars.html" class="nav_a">NEW CARS</a>
+                        <a href="#" class="nav_a">PRE-OWNED CARS</a>
+                        <a href="#" class="nav_a">FINANCE</a>
+                        <a href="#" class="nav_a">LEASE VS BUY</a>
+                        <a href="#" class="nav_a">CONTACT US</a>
+                    </nav>
+                    <div class="burger-mune_close-button" onclick="document.querySelector(`.burger-menu`).style.left = `100%`; document.querySelector(`body`).style.overflow = ``">
+                        <div class="close-button_line"></div>
+                        <div class="close-button_line"></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="main_container _container">
+                <div class="main_contact contact">
+                    <h2 class="contact_h2">Contact Us</h2>
+                    <h3 class="contact_h3">Feel free to contact us with questions, potencial partnerships or media inquiries</h3>
+                    <form action="" class="contact_form">
+                        <input class="contact_form-input" type="text" name="" id="" placeholder="Name">
+                        <input class="contact_form-input" type="email" name="" id="" placeholder="E-mail" maxlength="64">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Your text"></textarea>
+                        <input class="contact_form-submit _button" type="submit" value="SUBMIT">
+                    </form>
+                </div>
+                <div class="main_news news">
+                    <ul class="news_list">
+                        <li class="news_list-item">
+                            <img src="../src/news/car.jpg" alt="">
+                            <div class="news_list-item_body">
+                                <h3>An easier way to buy your next Toyota</h3>
+                                <a href="" class="news_list-a">more</a>
+                            </div>
+                        </li>
+                        <li class="news_list-item">
+                            <img src="../src/news/dog.jpg" alt="">
+                            <div class="news_list-item_body">
+                                <h3>A Guide to Road-Tripping With Pets</h3>
+                                <a href="" class="news_list-a">more</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <button class="news_button _button">SHOW MORE</button>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer_container _container">
+                <ul class="footer_list">
+                    <li class="footer_list-item">
+                        <h3 class="footer_list-item_title">Products</h3>
+                        <div class="footer_list-item_text _text">
+                            <a href="#">Used</a>
+                            <a href="#">New</a>
+                            <a href="#">Sell your car</a>
+                        </div>
+                    </li>
+                    <li class="footer_list-item">
+                        <h3 class="footer_list-item_title">Resources</h3>
+                        <div class="footer_list-item_text _text">
+                            <a href="#">Blog</a>
+                            <a href="#">FAQ</a>
+                            <a href="#">Contact us</a>
+                        </div>
+                        
+                    </li>
+                    <li class="footer_list-item">
+                        <h3 class="footer_list-item_title">Work With TrueCar</h3>
+                        <div class="footer_list-item_text _text">
+                            <a href="#">Dealers</a>
+                            <a href="#">Partners</a>
+                        </div>
+                        
+                    </li>
+                    <li class="footer_list-item">
+                        <h3 class="footer_list-item_title">About</h3>
+                        <div class="footer_list-item_text _text">
+                            <a href="#">About us</a>
+                            <a href="#">Team</a>
+                            <a href="#">Careers</a>
+                        </div> 
+                    </li>
+                </ul>
+    
+                <div class="footer_buttons-container">
+                    <a href="#" class="footer_button AppStore_button"><img src="../src/footer/appStore_button.png" alt=""></a>
+                    <a href="#" class="footer_button GooglePlay_button"><img src="../src/footer/googlePlay_button.png" alt=""></a>
+                </div>
+    
+                <div class="footer_text _text">
+                    For questions about the TrueCar Auto Buying Service please call ,<u class="">1-888-878-3227</u>.<br>
+                    Certified Dealers are contractually obligated by TrueCar to meet certain customer service requirements and complete the TrueCar Dealer Certification Program.<br>
+                    TrueCar does not broker, sell, or lease motor vehicles. Unless otherwise noted, all vehicles shown on this website are offered for sale by licensed motor vehicle dealers. All vehicles are subject to prior sale. By accessing this website, you agree to the TrueCar Terms of Service and Privacy Policy.
+                </div>
+                <div class="footer_PS">
+                    <a href="#" class="footer_PS-a">Terms of Service</a>
+                    <a href="#" class="footer_PS-a">Privacy Policy</a>
+                    <a href="#" class="footer_PS-a">Do Not Sell My Personal Information</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+</body>
+</html>
